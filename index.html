@@ -6,15 +6,15 @@
     <title>Test di Stupidità</title>
     <style>
         body {
-            font-size: 18px;
+            font-size: 18px; /* Aumentato di 3-4 punti rispetto alla dimensione standard */
         }
         label {
             display: block;
-            margin: 10px 0;
-            font-size: 20px;
+            margin: 10px 0; /* Aggiunto margine per distanziare le domande */
+            font-size: 20px; /* Aumentato per rendere il testo più grande */
         }
         h1, p {
-            font-size: 24px;
+            font-size: 24px; /* Aumentato per rendere l'intestazione e i paragrafi più grandi */
         }
         button {
             font-size: 20px;
@@ -29,19 +29,83 @@
 <body>
     <h1>Scopri il tuo livello di stupidità!</h1>
     <p>Rispondi alle seguenti domande e scopri quanto sei stupido!</p>
-
-    <label for="name">Inserisci il tuo nome:</label>
-    <input type="text" id="name" name="name" required>
-
     <form id="stupidTestForm">
         <label><input type="checkbox" name="question" value="1"> Ti è caduto il chewing gum dalla bocca mentre parlavi.</label>
         <label><input type="checkbox" name="question" value="1"> Ingoiare il chewing gum.</label>
         <label><input type="checkbox" name="question" value="1"> Salutare qualcuno per strada per sbaglio.</label>
         <label><input type="checkbox" name="question" value="1"> Sbattere contro una porta o qualcosa di trasparente.</label>
-        <!-- (Altro codice per le domande) -->
-
-        <button type="button" onclick="calculateScore()">Calcola il tuo punteggio</button>
-    </form>
+        <label><input type="checkbox" name="question" value="1"> Chiamare due volte lo stesso numero nonostante ti abbiano già detto che ti sei sbagliato.</label>
+        <label><input type="checkbox" name="question" value="1"> Pensare qualcosa di divertente, ridere ad alta voce per poi scoprire che tutti ti stanno guardando.</label>
+        <label><input type="checkbox" name="question" value="1"> Sbattere contro alberi, cartelloni, pali, cabine telefoniche mentre cammini o scii.</label>
+        <label><input type="checkbox" name="question" value="1"> Credere di poterti leccare il gomito.</label>
+        <label><input type="checkbox" name="question" value="1"> Inviare un messaggio al destinatario sbagliato.</label>
+        <label><input type="checkbox" name="question" value="1"> Il destinatario era qualcuno citato nel messaggio ed era meglio se non avesse mai visto quel messaggio.</label>
+        <label><input type="checkbox" name="question" value="1"> Metterti la scarpa destra al piede sinistro o viceversa.</label>
+        <label><input type="checkbox" name="question" value="1"> Uscire con l'etichetta dei vestiti ancora attaccata.</label>
+        <label><input type="checkbox" name="question" value="1"> Ti sei seduto sul water quando la tavoletta era alzata.</label>
+        <label><input type="checkbox" name="question" value="1"> Hai scoreggiato quando eri chiuso in doccia o in ascensore.</label>
+        <label><input type="checkbox" name="question" value="1"> Indossare abiti al contrario, magari perché ti sei rivestito di fretta dopo esserti spogliato in un luogo non adatto.</label>
+        <label><input type="checkbox" name="question" value="1"> Strozzarti con la tua stessa saliva.</label>
+        <label><input type="checkbox" name="question" value="1"> Prendere il bus sbagliato, finendo in culo a Dio.</label>
+        <label><input type="checkbox" name="question" value="1"> Provare ad entrare in una macchina che non è la tua o quella con la quale eri venuto.</label>
+        <label><input type="checkbox" name="question" value="1"> Confondere sale o zucchero ai pasti/bevande.</label>
+        <label><input type="checkbox" name="question" value="1"> Versare alimenti nel posto sbagliato (olio nel bicchiere, vino sull'insalata, pipì nel bidé).</label>
+        <label><input type="checkbox" name="question" value="1"> Aprire la doccia al massimo e bagnarti la faccia col getto.</label>
+        <label><input type="checkbox" name="question" value="1"> Ingoiare un insetto involontariamente.</label>
+        <label><input type="checkbox" name="question" value="1"> Ingoiarlo volontariamente.</label>
+        <label><input type="checkbox" name="question" value="1"> Incendiare qualcosa accidentalmente.</label>
+        <label><input type="checkbox" name="question" value="1"> Incendiarla volontariamente, per poi scoprire che era di tua proprietà.</label>
+        <label><input type="checkbox" name="question" value="1"> Bere qualcosa con la bocca e finire per fartela uscire dal naso/occhi.</label>
+        <label><input type="checkbox" name="question" value="1"> Svegliarti col cuscino pieno di bava.</label>
+        <label><input type="checkbox" name="question" value="1"> Svegliarti in un posto diverso da quello in cui ti sei addormentato.</label>
+        <label><input type="checkbox" name="question" value="1"> Svegliarti accanto a una persona che non conosci.</label>
+        <label><input type="checkbox" name="question" value="1"> Morta.</label>
+        <label><input type="checkbox" name="question" value="1"> Dormire in classe anche ad occhi aperti.</label>
+        <label><input type="checkbox" name="question" value="1"> Aprire una bibita gasata, bagnarti tutto, chiuderla di nuovo e al riaprirla bagnarti ancora tutto.</label>
+        <label><input type="checkbox" name="question" value="1"> Raccontare qualcosa e dimenticarti di ciò di cui stavi parlando.</label>
+        <label><input type="checkbox" name="question" value="1"> Raccontare una balla e dimenticarsene venendo scoperti.</label>
+        <label><input type="checkbox" name="question" value="1"> Arrivare nel negozio e dimenticarti cosa volevi comprare.</label>
+        <label><input type="checkbox" name="question" value="1"> Cercare di servire da bere con la bottiglia tappata.</label>
+        <label><input type="checkbox" name="question" value="1"> Usare le dita per fare addizioni semplici.</label>
+        <label><input type="checkbox" name="question" value="1"> Sbagliare la tua fermata del bus/treno perché non ci si è accorti che è già passata.</label>
+        <label><input type="checkbox" name="question" value="1"> Scendere una fermata prima perché si pensa che la propria sia già passata.</label>
+        <label><input type="checkbox" name="question" value="1"> Chiudere una porta che si apre solo da dentro e lasciare le chiavi dall'altro lato.</label>
+        <label><input type="checkbox" name="question" value="1"> Sfondare la suddetta porta e poi accorgerti che le chiavi le avevi in tasca oppure c'era un altro ingresso.</label>
+        <label><input type="checkbox" name="question" value="1"> Cercare la maniglia in una porta girevole.</label>
+        <label><input type="checkbox" name="question" value="1"> Cercare qualcosa dappertutto per scoprire che ce lo avevi in mano/indossato.</label>
+        <label><input type="checkbox" name="question" value="1"> Provare a regolare il calore dell'acqua per tanto tempo finché l'unico getto che esce è di temperatura inferiore ai 10°C.</label>
+        <label><input type="checkbox" name="question" value="1"> Andar a comprare qualcosa senza soldi.</label>
+        <label><input type="checkbox" name="question" value="1"> Fare una fila di 3 ore per scoprire che era quella sbagliata.</label>
+        <label><input type="checkbox" name="question" value="1"> Parlare in una lingua straniera e inventarsi le parole.</label>
+        <label><input type="checkbox" name="question" value="1"> Litigare con se stessi, vincere e scusarsi.</label>
+        <label><input type="checkbox" name="question" value="1"> Lasciare la pentola sul fuoco e dimenticarsene fino all'incendio.</label>
+        <label><input type="checkbox" name="question" value="1"> Usare il microonde e lasciarci dentro qualcosa per giorni.</label>
+        <label><input type="checkbox" name="question" value="1"> Uscire di casa con una pantofola e una scarpa.</label>
+        <label><input type="checkbox" name="question" value="1"> Essere scoperti mentre trastulli la bestia che hai nei pantaloni.</label>
+        <label><input type="checkbox" name="question" value="1"> Prendere una multa su bus o treno pensando di non aver l'abbonamento, pur avendolo con te.</label>
+        <label><input type="checkbox" name="question" value="1"> Fare una scoreggia in classe che, pensando fosse silenziosa, tende invece a fare più rumore di un republic XF-84H Thunderscreech.</label>
+        <label><input type="checkbox" name="question" value="1"> Fermarsi per l'imbarazzo, per poi riprendere 5 secondi dopo, e venire scoperti di nuovo.</label>
+        <label><input type="checkbox" name="question" value="1"> Scoreggiare rumorosamente in classe, apposta.</label>
+        <label><input type="checkbox" name="question" value="1"> Bagnare il letto di pipì.</label>
+        <label><input type="checkbox" name="question" value="1"> Diarrearsi addosso dopo aver pensato che quel tremolio di stomaco fosse una scoreggia.</label>
+        <label><input type="checkbox" name="question" value="1"> Postare qualcosa per sbaglio sui social, che magari era pure imbarazzante.</label>
+        <label><input type="checkbox" name="question" value="1"> Bannabile.</label>
+        <label><input type="checkbox" name="question" value="1"> Insultare una persona online pensando di aver vinto in un gioco, per poi perdere, e venir insultati da esso.</label>
+        <label><input type="checkbox" name="question" value="1"> Provare a battere il cuinque/pugno ad una persona, ma essa non se ne accorge.</label>
+        <label><input type="checkbox" name="question" value="1"> Provando ciò, gli tiri per sbaglio uno/un schiaffo/pugno in faccia.</label>
+        <label><input type="checkbox" name="question" value="1"> Sbavare dalla bocca mentre si parla con un'amico</label>
+        <label><input type="checkbox" name="question" value="1"> O con una ragazza.</label>
+        <label><input type="checkbox" name="question" value="1"> Inciampare per strada, scoprendo poi che tutti ti stanno guardando.</label>
+        <label><input type="checkbox" name="question" value="1"> Iniziare a trombare con una ragazza, per poi accorgerti di non avere comprato le protezioni.</label>
+        <label><input type="checkbox" name="question" value="1"> Continui a farlo senza protezioni e ti becchi l'<a href="https://nonciclopedia.org/wiki/HIV" target="_blank">HIV</a>.</label>
+        <label><input type="checkbox" name="question" value="1"> Chiamare il tuo amico nel modo più <a href="https://nonciclopedia.org/wiki/Gay" target="_blank">gay</a> in assoluto, facendoti sentire da un tuo parente.</label>
+        <label><input type="checkbox" name="question" value="1"> Macchiare muri, pavimenti, coperte, divani, animali domestici, armadi, landroni o porte con la "<a href="https://nonciclopedia.org/wiki/Sperma" target="_blank">sostanza bianca</a>", ben notabile.</label>
+        <label><input type="checkbox" name="question" value="1"> Pisciare ovunque, senza minimamente riuscire a centrare la tazza.</label>
+        <label><input type="checkbox" name="question" value="1"> Perdere accidentalmente il costume da bagno mentre sei al mare o in piscina.</label>
+        <label><input type="checkbox" name="question" value="1"> Toglierselo di proposito.</label>
+  </form>
+    
+    <button type="button" onclick="calculateScore()">Calcola il tuo punteggio</button>
     <div id="result"></div>
 
     <script>
@@ -76,22 +140,21 @@
             sendToGoogleSheets(name, score);
         }
 
-function sendToGoogleSheets(name, score) {
-    const url = 'https://script.google.com/macros/s/AKfycbx2FejqQnbdaLydxGNBjeLqbHY2xn-W7xYe2cSvg-ijLj7RNX8HOOCul43F9e98QLBi/exec'; // Sostituisci con il tuo URL Web App
-    const data = { name: name, score: score };
+        function sendToGoogleSheets(name, score) {
+            const url = 'https://script.google.com/macros/s/AKfycbx2FejqQnbdaLydxGNBjeLqbHY2xn-W7xYe2cSvg-ijLj7RNX8HOOCul43F9e98QLBi/exec'; // Sostituisci con il tuo URL Web App
+            const data = { name: name, score: score };
 
-    fetch(url, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    })
-    .then(response => console.log('Dati inviati con successo!'))
-    .catch(error => console.error('Errore nell\'invio dei dati:', error));
-}
-
+            fetch(url, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+            .then(response => console.log('Dati inviati con successo!'))
+            .catch(error => console.error('Errore nell\'invio dei dati:', error));
+        }
     </script>
 </body>
 </html>
